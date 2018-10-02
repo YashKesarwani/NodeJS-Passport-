@@ -6,15 +6,27 @@
  <title>Login Register</title>
  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
  <link rel="stylesheet"  href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
- <style>
-  html{
-   padding:50px;
-  }
- </style>
+ <div class="container-fluid" style="height:50px;font-size:16px;">
+        <div id="head">
+            <nav class="navbar navbar-inverse">
+                    <div class="container-fluid">
+                      <div class="navbar-header">
+                        <a class="navbar-brand" href="/">NIT Kurukshetra</a>
+                      </div>
+                      <ul class="nav navbar-nav">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/login">Sign in</a></li>
+                        <li class="active"><a href="/signup">Sign up</a></li>
+                      </ul>
+                    </div>
+            </nav>        
+        </div>       
+    </div>
 </head>
 <body>
  <div class="container">
   <div class="col-sm-6 col-sm-offset-3">
+   <div class="jumbotron" style="margin-top:30px;">   
    <h2>Register</h2>
 
    <% if(message.length > 0) { %>
@@ -31,14 +43,31 @@
      <input type="text" class="form-control" name="password">
     </div>
 
-    <button type="submit" class="btn btn-succcess btn-lg">Register</button>
+    <button type="submit" class="btn btn-info btn-lg">Register</button>
    </form>
 
    <hr>
 
-   <p>Need an account <a href="/signup">Register</a></p>
+   <p>Already have an account <a href="/login">Login</a>.</p>
    <p>Go Back <a href="/">Home</a>.</p>
+   </div>
   </div>
  </div>
+    <div id="foot" style="font-weight:bold;font-size:15px;">
+        <nav class="navbar navbar-fixed-bottom" style="background-color:orange">
+                <div class="container-fluid">
+                  <ul class="nav navbar-nav">
+                    <li><a href="http://www.nitkkr.ac.in/sub_courses.php?id=103&id2=13" style="color:black;">About NIT KKR</a></li>
+                    <li><a href="http://www.nitkkr.ac.in/sub_courses.php?id=130&id2=14" style="color:black;">Academic Section Brochure</a></li>
+                    <li><a href="http://www.nitkkr.ac.in/sub_courses.php?id=7&id2=18" style="color:black;">Training And Placement Section</a></li>
+                    <li><a href="http://www.nitkkr.ac.in/sub_courses.php?id=8&id2=19" style="color:black;">Student Activities</a></li>
+                    <li><a href="http://www.nitkkr.ac.in/sub_courses.php?id=5&id2=16" style="color:black;">Departments</a></li>
+                    <li><a href="http://nitkkr.ac.in/courses.php?id=5" style="color:black;">Student's Corner</a></li>
+                    <li><a href="http://nitkkr.ac.in/courses.php?id=6" style="color:black;">Important Links</a></li>
+                    <li><a href="http://nitkkr.ac.in/courses.php?id=17" style="color:black;">More @NIT KKR</a></li>
+                  </ul>
+                </div>
+        </nav>        
+    </div>
 </body>
 </html>

@@ -5,20 +5,32 @@
  <meta http-equiv="X-UA-Compatible" content="ie=edge">
  <title>Login Register</title>
  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
- <link rel="stylesheet" 
- href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
- <style>
-  html{
-   padding:50px;
-  }
- </style>
+ <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+ <div class="container-fluid" style="height:50px;font-size:16px;">
+        <div id="head">
+            <nav class="navbar navbar-inverse">
+                    <div class="container-fluid">
+                      <div class="navbar-header">
+                        <a class="navbar-brand" href="/">NIT Kurukshetra</a>
+                      </div>
+                      <ul class="nav navbar-nav">
+                        <li class="active"><a href="/profile">Profile</a></li>
+                        <li><a href="http://nitkkr.ac.in/courses.php?id=5">Student's Corner</a></li>
+                        <li><a href="http://www.nitkkr.ac.in/sub_courses.php?id=8&id2=19">Student Activities</a></li>
+                        <li><a href="http://www.nitkkr.ac.in/sub_courses.php?id=5&id2=16">Departments</a></li>
+                        <li><a href="http://www.nitkkr.ac.in/sub_courses.php?id=7&id2=18">Training And Placement Section</a></li>
+                    
+                      </ul>
+                      <ul class="nav navbar-nav navbar-right">  
+                        <li><a href="/logout" class="btn btn-danger btn-lg" style="color:white">Logout</a></li>
+                      </ul>
+                    </div>
+            </nav>        
+        </div>       
+     </div>
 </head>
 <body>
- <div class="container">
-  <div class="page-header text-center">
-   <h1>My Profile</h1>
-   <a href="/logout" class="btn btn-danger btn-sm">Logout</a>
-  </div>
+ <div class="jumbotron">
 
   <div class="row">
    <div class="col-sm-12">
@@ -26,8 +38,27 @@
      <h3><span class="fa fa-user"></span> Welcome <%= user.username %></h3>
 
      <p>
-      <strong>id</strong> <%= user.id %> <br>
-      <strong>username</strong> <%= user.username %> <br>
+        <center><img src="/img/nit1.jpg" style="width:200px;height:200px; "> </center>
+        <hr>
+        <h4><u>A Small Description about NIT KKR</h4></u>
+        <p style="font-size:15px;text-align:justify">
+            
+        National Institute of Technology Kurukshetra (NITK) enjoys the reputation of being a centre of excellence, facilitating quality 
+        technical and management education, research and training. It has been confered the status of being an Institution of National 
+        Importance.
+        <br><br>
+        A Dataquest-IDC-NASSCOM survey placed the institute among the top twenty engineering institutions in the country. The institute 
+        scored high on all the parameters such as Placement, Intellectual Capital, Infrastructure, Industry Interface and Recruiter’s
+        Perception.
+        <br><br>
+        Established in the year 1963, NITK has made rapid strides toward excellence. A sprawling lush green campus, outstanding 
+        infrastructure, state-of-the-art support system, contemporary curriculum and a dedicated faculty provide an enabling environment 
+        for quality teaching, learning and research.
+        <br><br>
+        The institute recognizes the significance of Institute-industry Interface and promotes interaction with the industry through 
+        student placements, consultancy services, joint research projects and jointly organizing workshops, seminars, conferences, etc. 
+        Further strengthening of this bond with the industry is currently a matter of priority for the institute.
+        </p>
      </p>
     </div>
    </div>

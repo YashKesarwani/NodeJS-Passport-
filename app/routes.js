@@ -1,7 +1,10 @@
+var express=require('express');
 module.exports = function(app, passport) {
  app.get('/', function(req, res){
   res.render('index.ejs');
  });
+
+ app.use(express.static(__dirname+'/public'));
 
  app.get('/login', function(req, res){
   res.render('login.ejs', {message:req.flash('loginMessage')});

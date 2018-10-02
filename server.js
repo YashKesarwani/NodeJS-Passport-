@@ -11,6 +11,7 @@ var flash = require('connect-flash');
 
 require('./config/passport')(passport);
 
+app.use(express.static("public"));
 app.use(morgan('dev'));
 app.use(cookieParser());
 app.use(bodyParser.urlencoded({
